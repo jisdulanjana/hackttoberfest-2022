@@ -1,0 +1,340 @@
+@charset "ISO-8859-1";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2 {
+    color: black;
+}
+
+h3 {
+    color: #535353;
+}
+
+.btn {
+    background: #173c82;
+    color: white;
+    padding: 5px 10px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.btn:hover {
+    color: #d4e4fd;
+    background: white;
+    padding: 3px 8px;
+    border: 2px solid;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    border-bottom: 2px solid #999;
+}
+th,
+td {
+    text-align: center;
+    padding: 8px;
+    background: rgb(255, 255, 255,0.40);
+}
+.container .content .new-accounts tr td img{
+	width:40px;
+	height:40px;
+}
+
+.side-menu {
+    position: fixed;
+    background: #173c82;
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.side-menu .Admin img{
+	width : 110px;
+	height : 110px;
+	display: flex;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.side-menu .Admin h1{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color : Black;
+}
+
+.side-menu li button {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    align-items: center;
+    border: 0px solid;
+    width: 265px;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0 3px  rgb(0, 0, 128);
+    margin-top: 7px;
+    margin-left: 5px;
+    margin-right: 10px;
+    padding: 5px;
+    background: #2E4DAB8C;
+    border-radius: 10px 10px 10px 10px;
+}
+.side-menu li:hover {
+    background: #428af5;
+    color: #332a5b;
+    width: 265px;
+    margin-left: 5px;
+    margin-right: 10px;
+    border: 0px solid;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.side-menu li img {
+	width : 60px;
+	height: 60px;
+}
+
+.container {
+    position: absolute;
+    right: 0;
+    width: 78.90vw;
+    height: 100vh;
+    background: #f1f1f1;
+}
+
+.container .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 78.90vw;
+    height: 10vh;
+    background: #173c82;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.container .header .nav {
+    width: 98%;
+    display: flex;
+    align-items: center;
+}
+
+.container .header .nav .search {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+
+.container .header .nav .search input[type=text] {
+    background: #f1f1f1;
+    padding: 10px;
+    width: 50%;
+    border: 0px solid;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.container .header .nav .search button {
+	background:#72c4f8;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px solid;
+    border-radius: 10px 10px 10px 10px;
+    justify-content: space-around;
+    margin-left: 5px;
+}
+
+.container .header .nav .search button img {
+    width: 30px;
+    height: 30px;
+}
+.nav{
+    display: flex;
+    align-items: center; 
+}
+.nav .u-n{
+	display: flex;
+	float: right;
+    
+}
+.notification img{
+	width: 40px;
+    height: 40px;
+   
+}
+.user img {
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+   
+   
+}
+.container .content {
+    position: relative;
+    margin-top: 10vh;
+    min-height: 90vh;
+    background:url('Admin.icons/plane-9922.png') repeat #edf3fe;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1100px 600px;
+    
+    
+}
+.container .content  background:url('Admin.icons/plane-9922.png'){
+	 opacity: 0.9;
+}
+
+.container .content .cards {
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container .content .cards .card {
+    width: 245px;
+    height: 145px;
+    background: rgb(212,228,253,0.80);
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px 20px 20px 20px;
+}
+.container .content .cards .card img{
+	width: 80px;
+	height: 80px;
+}
+.container .content .content-2 {
+    min-height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 120px;
+}
+
+.container .content .content-2 .recent-activities {
+    min-height: 30vh;
+    flex: 5;
+    background: rgb(212,228,253,0.80);
+    margin: 0px 25px 25px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px 20px 20px 20px;
+}
+.container .content .content-2 .recent-activities .title {
+	background-color : rgb(46,77,171,0.80);
+	border-radius:20px 20px 0px 0px;
+}
+
+@media screen and (max-width: 1050px) {
+    .side-menu li {
+        margin-left: 5px;
+        margin-right: 10px;
+        padding: 8px 20px;
+        font-size: 13px;
+        border-radius: 10px 10px 10px 10px;
+    }
+    .side-menu li:hover {
+        margin-left: 5px;
+        margin-right: 3px;
+        background: #428af5;
+        padding: 8px 20px;
+        border-radius: 10px 10px 10px 10px;
+    }
+   
+}
+
+@media screen and (max-width: 940px) {
+    .side-menu li span {
+        display: none;
+    }
+    .side-menu {
+        align-items: center;
+    }
+    .side-menu li img {
+        width: 40px;
+        height: 40px;
+    }
+    .side-menu li {
+        margin-left: 5px;
+        margin-right: 10px;
+        padding: 8px 15px;
+        border-radius: 10px 10px 10px 10px;
+        
+    }
+     .side-menu li:hover {
+        margin-left: 5px;
+        margin-right: 1px;
+        background: #428af5;
+        padding: 8px 15px;
+        border-radius: 10px 10px 10px 10px;
+    }
+        
+}
+
+
+@media screen and (max-width:550px) {
+	.side-menu .Admin img{
+	    width: 80px;
+	    height: 80px;
+	}
+    .Admin h1 {
+        font-size: 20px;
+    }
+    .container .content .cards {
+        justify-content: center;
+    }
+    .side-menu li {
+        margin-left: 5px;
+        margin-right: 10px;
+        padding: 8px 15px;
+        border-radius: 10px 10px 10px 10px;
+    }
+    .side-menu li:hover {
+        margin-left: 5px;
+        margin-right: 3px;
+        background: #428af5;
+        padding: 8px 15px;
+        border-radius: 10px 10px 10px 10px;
+    }
+    .side-menu li img {
+        width: 30px;
+        height: 30px; 
+    }
+   
+}
